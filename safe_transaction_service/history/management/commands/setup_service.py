@@ -382,7 +382,11 @@ MASTER_COPIES: Dict[EthereumNetwork, List[Tuple[str, int, str]]] = {
         ("0xfb1bffC9d739B8D520DaF37dF666da4C687191EA", 938848, "1.3.0+L2"),
         ("0x69f4D1788e39c87893C980c06EdF4b7f686e2938", 939064, "1.3.0"),
     ],
-    EthereumNetwork.SAPPHIRE_TESTNET: [
+    EthereumNetwork.OASIS_SAPPHIRE_TESTNET: [
+        ("0x369C13406825D9F85348B11e2Bb2905D5493313C", 392327, "1.3.0+L2"),
+        ("0x92343D7E05Caac0198A47013Abd917461322C9C4", 392329, "1.3.0"),
+    ],
+    EthereumNetwork.OASIS_SAPPHIRE: [
         ("0x369C13406825D9F85348B11e2Bb2905D5493313C", 392327, "1.3.0+L2"),
         ("0x92343D7E05Caac0198A47013Abd917461322C9C4", 392329, "1.3.0"),
     ],
@@ -570,7 +574,10 @@ PROXY_FACTORIES: Dict[EthereumNetwork, List[Tuple[str, int]]] = {
     EthereumNetwork.BASE_GOERLI_TESTNET: [
         ("0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2", 938848),  # v1.3.0
     ],
-    EthereumNetwork.SAPPHIRE_TESTNET: [
+    EthereumNetwork.OASIS_SAPPHIRE_TESTNET: [
+        ("0xb9373Bd08E33C384f6d755196819dA72830Ba509", 392282),  # v1.3.0
+    ],
+    EthereumNetwork.OASIS_SAPPHIRE: [
         ("0xb9373Bd08E33C384f6d755196819dA72830Ba509", 392282),  # v1.3.0
     ],
 }
