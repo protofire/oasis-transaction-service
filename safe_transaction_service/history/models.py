@@ -1497,6 +1497,7 @@ def validate_version(value: str):
 
 
 class SafeMasterCopyManager(models.Manager):
+    @cache
     def get_version_for_address(self, address: ChecksumAddress) -> Optional[str]:
         try:
             return self.filter(address=address).only("version").get().version
