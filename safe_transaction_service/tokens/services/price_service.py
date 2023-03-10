@@ -278,8 +278,8 @@ class PriceService:
         ):
             return self.get_xdc_usd_price()
         elif self.ethereum_network in (
-            EthereumNetwork.SAPPHIRE,
-            EthereumNetwork.SAPPHIRE_TESTNET,
+            EthereumNetwork.OASIS_SAPPHIRE,
+            EthereumNetwork.OASIS_SAPPHIRE_TESTNET,
         ):
             return self.get_oasis_usd_price()
         else:
