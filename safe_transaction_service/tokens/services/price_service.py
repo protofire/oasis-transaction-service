@@ -188,8 +188,8 @@ class PriceService:
     def get_xdc_usd_price(self) -> float:
         return self.kucoin_client.get_xdc_usd_price()
 
-    def get_oasis_usd_price(self) -> float:
-        return self.coingecko_client.get_oasis_usd_price()
+    def get_oasis_saphire_usd_price(self) -> float:
+        return self.coingecko_client.get_oasis_saphire_usd_price()
 
     def get_kcs_usd_price(self) -> float:
         try:
@@ -281,7 +281,7 @@ class PriceService:
             EthereumNetwork.OASIS_SAPPHIRE,
             EthereumNetwork.OASIS_SAPPHIRE_TESTNET,
         ):
-            return self.get_oasis_usd_price()
+            return self.get_oasis_saphire_usd_price()
         else:
             try:
                 return self.kraken_client.get_eth_usd_price()
