@@ -156,6 +156,8 @@ class SafeService:
         try:
             safe = Safe(safe_address, self.ethereum_client)
             safe_info = safe.retrieve_all_info()
+            logger.info("Safe info retrieved from blockchain: %s", safe_info)
+            logger.info("Master copy: %s", safe_info.master_copy)
             # Return same master copy information than the db method
             return replace(
                 safe_info,
